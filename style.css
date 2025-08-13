@@ -1,0 +1,212 @@
+/* ===== General Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf5e6; /* Warm cream background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #8b0000; /* Deep wine red */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Hero ===== */
+.hero {
+    background: url('images/restaurant-hero.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* ===== Menu Section ===== */
+.menu-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    color: #8b0000;
+}
+
+.menu-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #a52a2a;
+    border-bottom: 2px solid #a52a2a;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* ===== About Section ===== */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1 1 400px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #8b0000;
+}
+
+.about-section img {
+    flex: 1 1 400px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff8f0;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8b0000;
+}
+
+.contact-info div {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .socials a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+    color: #ffcc99;
+}
+
+footer .newsletter {
+    margin: 15px 0;
+}
+
+footer input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 220px;
+}
+
+footer button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #ffcc99;
+    color: #8b0000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #f5b97f;
+}
